@@ -15,7 +15,8 @@ void ex7()
 	} while (1);
 	
 	cout << "輸入姓名:"; cin >> cName; cin.sync();
-	cout << "輸入生日(yymmdd):"; cin >> cBirthDay; cin.getline(cBirthDay, 7);
+	cout << "輸入生日(yymmdd):";while (getchar() != '\n'); cin.getline(cBirthDay, 7);
+	
 	cout << "輸入住址:"; cin.get(cAddr, 10);
 	cout << "學號 : " << ix << " 姓名 : " << cName << endl;
 	cout << "生日 : " << cBirthDay << " 住址 : " << cAddr << endl;
